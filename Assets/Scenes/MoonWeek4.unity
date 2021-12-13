@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 28095618}
   - component: {fileID: 28095617}
   - component: {fileID: 28095616}
+  - component: {fileID: 28095619}
   m_Layer: 0
   m_Name: PostProcessing
   m_TagString: Untagged
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: a886e40c88a3b764892d448f5d7e44ae, type: 2}
   isGlobal: 0
-  blendDistance: 0
+  blendDistance: 4.33
   weight: 1
   priority: 0
 --- !u!4 &28095618
@@ -190,6 +191,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &28095619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28095615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.3230114, y: 4.0852013, z: 10.732325}
+  m_Center: {x: 0.06894016, y: 1.5426006, z: 0.06315136}
 --- !u!1 &125013006
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,9 +496,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 0.5, z: 0}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
